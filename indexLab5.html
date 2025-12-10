@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinWin Travel - Лабораторна робота №5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .brand-header {
+            background: linear-gradient(90deg, #0056b3 0%, #00d4ff 100%);
+            color: white;
+            padding: 20px 0;
+            margin-bottom: 30px;
+            border-bottom: 5px solid #003366;
+        }
+        .hero-title {
+            font-family: 'Arial', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+<header class="brand-header shadow-sm block-1">
+    <div class="container d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center">
+            <img src="https://placehold.co/60x60/white/0056b3?text=WW" alt="WinWin Logo" class="me-3 rounded">
+            <div>
+                <h1 class="h3 m-0 hero-title">WinWin Travel</h1>
+                <small>Найкращі готелі для вашого відпочинку</small>
+            </div>
+        </div>
+        <nav>
+            <a href="#" class="text-white text-decoration-none me-3">Готелі</a>
+            <a href="#" class="text-white text-decoration-none me-3">Про нас</a>
+            <a href="#" class="btn btn-light btn-sm">Увійти</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="mb-5 block-2">
+        <h2 class="text-center mb-4 display-6">Популярні напрямки</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://placehold.co/600x400/orange/white?text=Hotel+Kyiv" class="card-img-top" alt="Готель Київ">
+                    <div class="card-body">
+                        <h5 class="card-title">Grand Hotel Kyiv</h5>
+                        <p class="card-text text-muted">Центр міста, чудовий вид.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://placehold.co/600x400/green/white?text=Hotel+Lviv" class="card-img-top" alt="Готель Львів">
+                    <div class="card-body">
+                        <h5 class="card-title">Lviv Old Town</h5>
+                        <p class="card-text text-muted">Атмосфера старого міста.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://placehold.co/600x400/blue/white?text=Resort+Odesa" class="card-img-top" alt="Готель Одеса">
+                    <div class="card-body">
+                        <h5 class="card-title">Odesa Sea View</h5>
+                        <p class="card-text text-muted">Перша лінія, басейн.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section class="mb-5 block-5">
+        <h2 class="mb-3">Доступні пропозиції (Live Data)</h2>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover table-sm table-bordered align-middle">
+                <thead class="table-dark">
+                <tr>
+                    <th>#</th>
+                    <th>Назва готелю</th>
+                    <th>Місто</th>
+
+
+
+                    <th>Клас</th>
+                    <th>Ціна (за ніч)</th>
+                    <th>Статус</th>
+                    <th>Рейтинг</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Hilton Kyiv</td>
+                    <td>Київ</td>
+                    <td>5 зірок</td>
+                    <td>$250</td>
+                    <td class="table-success">Вільний</td> <td>9.8</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Radisson Blu</td>
+                    <td>Буковель</td>
+                    <td>4 зірки</td>
+                    <td>$180</td>
+                    <td class="table-success">Вільний</td>
+                    <td>9.5</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Leopolis Hotel</td>
+                    <td>Львів</td>
+                    <td>5 зірок</td>
+                    <td>$210</td>
+                    <td class="text-danger">Зайнято</td>
+                    <td>9.7</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Nemo Hotel</td>
+                    <td>Одеса</td>
+                    <td>5 зірок</td>
+                    <td>$300</td>
+                    <td class="table-success">Вільний</td>
+                    <td>9.9</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Rixos Prykarpattya</td>
+                    <td>Трускавець</td>
+                    <td>5 зірок</td>
+                    <td>$220</td>
+                    <td class="text-danger">Зайнято</td>
+                    <td>9.4</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Optima Collection</td>
+                    <td>Дніпро</td>
+                    <td>3 зірки</td>
+                    <td>$80</td>
+                    <td class="table-success">Вільний</td>
+                    <td>8.9</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>InterContinental</td>
+                    <td>Київ</td>
+                    <td>5 зірок</td>
+                    <td>$280</td>
+                    <td class="table-success">Вільний</td>
+                    <td>9.6</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>F & B Spa Resort</td>
+                    <td>Поляниця</td>
+                    <td>4 зірки</td>
+                    <td>$150</td>
+                    <td class="text-danger">Зайнято</td>
+                    <td>9.2</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section class="mb-5 block-9 bg-light p-4 rounded">
+        <h2 class="text-center mb-5">Що кажуть наші клієнти</h2>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <div class="mb-3">
+                    <img src="https://placehold.co/150x150/0056b3/white?text=User+1" alt="Клієнт 1" class="rounded-circle img-thumbnail shadow-sm">
+                </div>
+                <h5>Олексій П.</h5>
+                <p class="fst-italic">"Сервіс winwin.travel просто супер! Забронював готель у два кліки. Дуже зручно для відряджень."</p>
+                <div class="text-warning">★★★★★</div>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <div class="mb-3">
+                    <img src="https://placehold.co/150x150/d63384/white?text=User+2" alt="Клієнт 2" class="rounded-circle img-thumbnail shadow-sm">
+                </div>
+                <h5>Марина К.</h5>
+                <p class="fst-italic">"Знайшла чудові апартаменти у Львові. Фото повністю відповідали реальності. Рекомендую!"</p>
+                <div class="text-warning">★★★★★</div>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <div class="mb-3">
+                    <img src="https://placehold.co/150x150/198754/white?text=User+3" alt="Клієнт 3" class="rounded-circle img-thumbnail shadow-sm">
+                </div>
+                <h5>Дмитро В.</h5>
+                <p class="fst-italic">"Ціни приємні, інтерфейс зрозумілий. Вже планую наступну відпустку з вами."</p>
+                <div class="text-warning">★★★★☆</div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    <p>&copy; 2025 WinWin Travel. Всі права захищено.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

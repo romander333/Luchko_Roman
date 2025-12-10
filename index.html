@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinWin Travel - Лабораторна №6 (Вар. 10)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            position: relative;
+            padding-top: 56px;
+        }
+
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .brand-header {
+            background: linear-gradient(90deg, #0056b3 0%, #00d4ff 100%);
+            color: white;
+            padding: 40px 0;
+            border-radius: 0 0 15px 15px;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="80" tabindex="0">
+
+<nav id="navbar-example" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <span class="fw-bold text-info">WinWin</span> Travel
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#sec-intro">Головна</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sec-gallery">Готелі</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sec-table">Ціни</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sec-reviews">Відгуки</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sec-map">Карта</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sec-rules">Інфо</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="sec-intro" class="p-0 mb-4">
+    <div class="brand-header text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">WinWin Travel</h1>
+            <p class="lead">Найкращі готелі для вашого відпочинку</p>
+            <a href="#sec-gallery" class="btn btn-light mt-3">Знайти номер</a>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+
+    <section id="sec-gallery">
+        <h2 class="text-center mb-4 text-primary">Популярні напрямки</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://placehold.co/600x400/orange/white?text=Hotel+Kyiv" class="card-img-top" alt="Kyiv">
+                    <div class="card-body">
+                        <h5 class="card-title">Grand Hotel Kyiv</h5>
+                        <p class="card-text text-muted">Центр міста, чудовий вид.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://placehold.co/600x400/green/white?text=Hotel+Lviv" class="card-img-top" alt="Lviv">
+                    <div class="card-body">
+                        <h5 class="card-title">Lviv Old Town</h5>
+                        <p class="card-text text-muted">Атмосфера старого міста.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://placehold.co/600x400/blue/white?text=Resort+Odesa" class="card-img-top" alt="Odesa">
+                    <div class="card-body">
+                        <h5 class="card-title">Odesa Sea View</h5>
+                        <p class="card-text text-muted">Перша лінія, басейн.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-table">
+        <h2 class="mb-3 text-primary">Прайс-лист</h2>
+        <div class="table-responsive mb-3">
+            <table class="table table-striped table-hover table-sm table-bordered align-middle">
+                <thead class="table-dark">
+                <tr>
+                    <th>#</th>
+                    <th>Назва</th>
+                    <th>Місто</th>
+                    <th>Ціна</th>
+                    <th>Статус</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td>1</td><td>Hilton Kyiv</td><td>Київ</td><td>$250</td><td class="table-success">Вільний</td></tr>
+                <tr><td>2</td><td>Radisson Blu</td><td>Буковель</td><td>$180</td><td class="table-success">Вільний</td></tr>
+                <tr><td>3</td><td>Leopolis</td><td>Львів</td><td>$210</td><td class="text-danger">Зайнято</td></tr>
+                <tr><td>4</td><td>Nemo Hotel</td><td>Одеса</td><td>$300</td><td class="table-success">Вільний</td></tr>
+                <tr><td>5</td><td>Rixos</td><td>Трускавець</td><td>$220</td><td class="text-danger">Зайнято</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled"><a class="page-link" href="#">Попер.</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Наст.</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section id="sec-reviews" class="bg-light p-4 rounded">
+        <h2 class="text-center mb-4 text-primary">Відгуки клієнтів</h2>
+        <div class="row text-center">
+            <div class="col-md-6">
+                <blockquote class="blockquote">
+                    <p class="mb-0">"Чудовий сервіс, рекомендую!"</p>
+                    <footer class="blockquote-footer mt-1">Олексій П.</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-6">
+                <blockquote class="blockquote">
+                    <p class="mb-0">"Все сподобалось, швидко і зручно."</p>
+                    <footer class="blockquote-footer mt-1">Марина К.</footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-map">
+        <h2 class="text-center mb-4 text-primary">Як нас знайти</h2>
+        <div class="ratio ratio-16x9 border shadow-sm">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.528476722378!2d30.520938676230046!3d50.4501363873767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce50f8b6e3c3%3A0xb528f13296c00d53!2z0JzQsNC50LTQsNC9INCd0LXQt9Cw0LvQtdC20L3QvtGB0YLRliwg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1701445000000!5m2!1suk!2sua" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <section id="sec-rules" class="mb-5">
+        <h2 class="mb-3 text-primary">Корисна інформація</h2>
+        <div class="alert alert-info" role="alert">
+            Ми дбаємо про вашу безпеку та комфорт. Будь ласка, ознайомтесь з правилами.
+        </div>
+
+        <p>
+            <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#collapseRules" role="button" aria-expanded="false" aria-controls="collapseRules">
+                Читати правила бронювання та скасування &#9660;
+            </a>
+        </p>
+
+        <div class="collapse" id="collapseRules">
+            <div class="card card-body bg-light">
+                <h5>Політика скасування</h5>
+                <p>Безкоштовне скасування можливе за 24 години до заїзду. У разі пізнього скасування стягується плата за першу ніч.</p>
+                <h5>Час заїзду та виїзду</h5>
+                <p>Заїзд: з 14:00. Виїзд: до 12:00. Ранній заїзд можливий за додаткову плату при наявності вільних місць.</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer class="bg-dark text-white text-center py-4 mt-auto">
+    <p class="mb-0">&copy; 2025 WinWin Travel. Лабораторна робота №6.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
